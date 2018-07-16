@@ -2,21 +2,21 @@
 # GraphqlPlayground::Rails
 A blatant copy of [GraphiQL::Rails](https://github.com/rmosolgo/graphiql-rails) with much less functionality but with [GraphQL Playground](https://github.com/graphcool/graphql-playground) instead.
 
+## Reason for fork
+Graphql playground gem uses Rails version 5.1. We had a requirement in one of the project to use the Rails version lesser than 5.1 so we forked to gem [repository](https://github.com/papodaca/graphql_playground-rails) and downgraded the rails version to 5.0.7.
+
+
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'graphql_playground-rails'
+# GraphQL Playground for query editor in a Rails.
+gem 'graphql_playground-rails', github: 'bigbinary/graphql_playground-rails'
 ```
 
 And then execute:
 ```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install graphql_playground-rails
+$ bundle install
 ```
 
 ### Mount the Engine
